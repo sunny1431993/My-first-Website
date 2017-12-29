@@ -1,0 +1,316 @@
+/* basic menu styles */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Tillana');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+.block-menu {
+	display: block;
+	background:#111B22;
+}
+.header{
+    background-image: url("http://www.investcor.eu/wp-content/uploads/2016/01/internal-audit-services-investcor.jpg");
+    background-color:;
+    width:100%;
+    height:550px;
+    background-position: center;
+    padding-top: 0px;
+    background-attachment:;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom:50px;
+    background-blend-mode:luminosity;
+}
+.header-text{
+    position:relative;
+    float:right;
+    bottom:0px;
+    width:50%;
+    display: block;
+    padding-top:20em;
+    padding-left:5em;
+    padding-right:1em;
+    overflow:hidden;
+    -webkit-animation: rightThenLeft 5s linear;
+    animation: rightThenLeft 5s linear;
+    }
+    @keyframes rightThenLeft{
+                0%   {margin-right:100%;text-decoration-style:dashed;}
+                50%  {margin-left:50%;text-decoration-style: double;}
+                100% {margin-right:0%;}
+    }
+.headerh1{
+    color:#111b22;
+    font-size:100px;
+    font-weight:400;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 20px 20px 20px black;
+    transition:all 0.5s ease-in-out 0s;
+    width:auto;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation:colorchange 5s linear;
+    animation:colorchange 5s linear;
+      }
+  @keyframes colorchange{
+    0%{color:white;}
+    40%{color:white;}
+    }
+.headerh1:hover{
+    transform:rotate(5deg);
+}
+.headerp{
+    color:#111B22;
+    width:auto;
+    font-weight:100;
+    font-size:40px;
+    font-family: Spectral;
+    text-shadow:10px 10px 20px #000000;
+    display:block;
+    margin-top:0px;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    transition:all 0.5s ease-in-out 0s;
+    -webkit-animation:colorchange 5s linear;
+    animation:colorchange 5s linear;
+}
+.headerp:hover{
+    transform:rotate(5deg);
+    text-decoration-color: aqua;
+}
+   
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #111B22;
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+.img1{
+    width:100%;
+    height:auto;
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:50px;
+}
+.page-wrap{
+    margin-bottom:200px;
+    padding-bottom:100px;
+}
+.four-columns{
+  clear:both;
+}
+.column-one{
+  width: 25%;
+  height: 500px;
+  float:left;
+  background-color:#111B22;
+  padding:0;
+  margin:0;
+  transition:all 0.4s ease-in-out 0s;
+  }
+  
+.h31{
+  font-family: "Open Sans","Helvetica","Arial",sans-serif;
+  font-size: 35px;
+  font-weight:400;
+  text-align:center;
+  color:#ffffff;
+  padding-top:30px;
+    }
+
+.para1{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  color:#ffffff;
+  font-weight:400;
+  padding:40px;
+  }
+.text-box{
+  position:relative;
+  padding:15px;
+  height:500px;
+    }
+  
+.column-two{
+  width: 25%;
+  height: 500px;
+  float:left;
+  padding:0;
+  margin:0;
+  background-color:#082e49;
+  }
+  .column-three{
+  width: 25%;
+  height: 500px;
+  float:left;
+  background-color:#0c3d60;
+  padding:0;
+  margin:0;
+    }
+.column-four{
+  width: 25%;
+  height: 500px;
+  float:left;
+  background-color:#0d4770;
+  padding:0;
+  margin:0;
+    }
+.page-info{
+  text-align:justify;
+  padding:15px;
+}
+.page-info h3{
+  text-align:center;
+  font-family: "Open Sans","Helvetica","Arial",sans-serif;
+  font-size:3em;
+  }
+
+
+.page-info-h1{
+    text-align:center;
+    padding-top:150px;
+    font-size:200px;
+    color:#111B22;
+}
+.page-info-p{
+  color:#111B22;
+}
+
+footer{
+  margin-left:0;
+  margin-right:0;
+  background-color:#305C7A;
+  position:absolute;'
+  bottom:0px;
+  width:100%;
+  height:auto;
+  }
+  footer h3{
+    color:white;
+    text-decoration:underline;
+    text-decoration-color:white;
+  }
+  footer p{
+    color:white;
+    width:100%;
+    align-content:center;
+    align-items: center;
+    justify-content: center;  
+  }
+  footer span{
+    color:white;
+    
+  }
+  .address{
+  float:left;
+  padding:35px;
+  padding-bottom:50px;
+  width:30%;
+  margin-left:4%;
+  margin-right:4%;
+  
+  }
+  .Main-address{
+   float:left;
+    width:30%;
+    padding:35px;
+    text-align:left;
+    margin-left:4%;
+    margin-right:4%;
+  }
+  .contact-info{
+    float:left;
+    position:relative;
+    padding-bottom:50px;
+    padding:35px;   
+    width:30%;
+    text-align:left;
+    margin-left:4%;
+    margin-right:4%;
+    margin-bottom:35px;
+  }
+  .copyright{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:35px;
+    background-color:#111B22; 
+    align-items:center;
+    margin-bottom: 0%;
+  }
+  

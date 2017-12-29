@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Syncopate:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+body{
+    margin-bottom:100px;
+    padding-bottom:500px;
+}
+.block-menu {
+	display: block;
+	background: #111B22;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+	transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #111B22;
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+    .header{
+    display:flex;
+    margin-top:0px;
+    width:100%;
+    height:400px;
+    background-color:#0c3d60;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px;
+    }
+.header-text{
+    font-size:150px;
+    font-weight:900;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align:center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    color:#0c3d60;
+    animation: anim 1.5s infinite alternate ease-in-out;
+    -webkit-animation: anim 1.5s infinite alternate ease-in-out;
+  }
+@keyframes anim{
+    from{
+        text-shadow: 0 0 10px transparent;
+    }
+    to{
+        text-shadow: 0 30px 50px black;
+        
+    }
+}
+.sect1{
+    padding-left:75px;
+    padding-right:75px;
+    margin-bottom:;
+}
+.heading1{
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:2.5em;
+    text-align:center;
+}    
+.para1{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+    line-height: inherit;
+}
+.para2{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+    line-height: inherit;
+}
+.para3{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+    line-height: inherit;
+}
+.bg-section{
+    width:25%;
+    float:left;
+    background-color:#e8ebef;
+    height:auto;
+    margin:4%
+    
+    
+}
+.gst-columns{
+    float:center;
+}
+
+.sect2{
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom:40px;
+    height:350px;
+    
+}
+.sect3{
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom:40px;
+    height:350px;
+}
+.sect4{
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom:40px;
+    height:350px;
+}
+.sect2 h2{
+    font-family: 'Raleway', sans-serif;
+    padding:15px;
+
+}
+.sect3 h2{
+    font-family: 'Raleway', sans-serif;
+    padding:15px;
+}
+.sect4 h2{
+    font-family: 'Raleway', sans-serif;
+    padding:15px;
+}
+.sect2 p{
+    font-family: 'Nunito', sans-serif;
+    padding-top:10px;
+    padding-right:25px;
+    padding-left:25px;
+    margin-bottom:54px;
+}
+.sect3 p{
+    font-family: 'Nunito', sans-serif;
+    padding-top:10px;
+    padding-right:25px;
+    padding-left:25px;
+    margin-bottom:54px;
+}
+.sect4 p{
+    font-family: 'Nunito', sans-serif;
+    padding-top:10px;
+    padding-right:25px;
+    padding-left:25px;
+    margin-bottom:30px;
+}
+.button1{
+    width:200px;
+    height:60px;
+    background-color: #313233;
+    transition:all 0.4s ease-in-out 0s;
+}
+.button1:hover{
+    background-color: #eaedef;
+    border:3px solid #313233;
+}
+.button1:hover a{
+    color:#313233;
+}
+.button1 a{
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-weight:;
+    color:#eaedef;
+    font-size:18px;
+    letter-spacing: 1px;
+    
+}
+

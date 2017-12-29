@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Syncopate:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+    margin-bottom:100px;
+    padding-bottom:500px;
+}
+.block-menu {
+	display: block;
+	background: #111B22;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #111B22;
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+    .header1{
+    display:;
+    margin-top:0px;
+    width:100%;
+    height:400px;
+    background-color:#0d4770;
+    justify-content: center;
+    align-items: center;
+    }
+.header-text{
+    font-size:150px;
+    font-weight:900;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align:center;
+    padding-top:125px;
+    padding-bottom: 125px;
+    color:#0d4770;
+    animation: anim 1.5s infinite alternate ease-in-out;
+    -webkit-animation: anim 1.5s infinite alternate ease-in-out;
+  }
+@keyframes anim{
+    from{
+        text-shadow: 0 0 10px transparent;
+    }
+    to{
+        text-shadow: 0 30px 50px black;
+        
+    }
+}
+.sect1{
+    padding-left:75px;
+    padding-right:75px;
+    margin-bottom:100px;
+}
+.heading1{
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:2.5em;
+    text-align:center;
+}    
+.para1{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+    line-height: inherit;
+}
+.para2{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+    line-height: inherit;
+}
+.para3{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+    line-height: inherit;
+}
+.heading2{
+   font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:2.5em; 
+    
+}
+.img1{
+    width:95px;
+    height:100px;
+    padding:10px;
+    
+}
+.grid{
+    margin-bottom:50px;
+    
+}
+.sect2{
+    margin-top:20px;
+    float:left;
+    width:25%;
+    text-align:center;
+    border:1px solid #d9d9db;
+    border-radius:10px;
+    padding:30px;
+    height:450px;
+    margin-left:15px;   
+    
+}
+.head-3{
+    font-family: 'Roboto', sans-serif;
+    padding:10px;
+}
+.para4{
+    line-height:24px;
+    font-family: 'Nunito', sans-serif;
+    font-size:15px;
+}
+.button1{
+    width:200px;
+    height:60px;
+    background-color:#4b8c51;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out 0s;
+    
+}
+.button1:hover{
+    background-color:#d2d8d2;
+    color:black;
+}
+.button1:hover a{
+    color:black;
+}
+.button1 a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    transition:all 0.4s ease-in-out 0s;
+}
+.sect3{
+    width:30%;
+    float: left;
+    margin:20px;
+    border:1px solid #d9d9db;
+    border-radius:10px;
+    height:200px;
+    overflow:scroll;
+}
+.sect4{
+    width:30%;
+    float: left;
+    margin:20px;
+    border:1px solid #d9d9db;
+    border-radius:10px;
+    height:200px;
+    overflow:scroll;
+}
+.sect5{
+    width:30%;
+    float: left;
+    margin:20px;
+    border:1px solid #d9d9db;
+    border-radius:10px;
+    height:200px;
+    overflow:scroll;
+}
+.sect6{
+    width:30%;
+    float: left;
+    margin:20px;
+    border:1px solid #d9d9db;
+    border-radius:10px;
+    height:200px;
+    overflow:scroll;
+}
+.sect3 h3{
+    padding-top:15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    }
+    .sect3 p{
+        text-align: justify;
+        padding:15px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .sect4 p{
+        text-align: justify;
+        padding:15px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .sect5 p{
+        text-align: justify;
+        padding:15px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .sect6 p{
+        text-align: justify;
+        padding:15px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .sect4 h3{
+        text-align: center;
+        padding-top:15px;
+        font-family: 'Roboto', sans-serif;
+        }
+        .sect5 h3{
+            text-align: center;
+            padding-top:15px;
+            font-family: 'Roboto', sans-serif;
+            }
+            .sect6 h3{
+                text-align: center;
+                padding-top:15px;
+                }
+                
+
